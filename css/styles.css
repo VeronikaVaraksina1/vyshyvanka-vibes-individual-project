@@ -1,0 +1,15 @@
+@import url("./reset.css");
+@import url("./common.css");
+@import url("./header.css");
+@import url("./hero.css");
+@import url("./about-us.css");
+@import url("./our-collection.css");
+@import url("./your-order.css");
+@import url("./testimonials.css");
+@import url("./footer.css");
+
+:root {
+  --primary-text-color: #fcf9f9;
+  --accent-text-color: #ecd979;
+  --secondary-text-color: #1c2225;
+}
