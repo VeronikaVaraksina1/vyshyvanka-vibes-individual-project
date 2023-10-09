@@ -116,12 +116,12 @@
 
     <main>
       <section class="section hero-section">
-        <div class="container">
+        <div class="container hero-container">
           <div class="hero-title-and-order-button-wrapper">
             <h1 class="hero-title">
               Reviving the traditional
-              <span class="hero-title-span">Ukrainian</span>
-              &nbsp;artistry in every stitch.
+              <span class="hero-title-span">Ukrainian </span>artistry in every
+              stitch.
             </h1>
 
             <a class="hero-order-link" href=""
@@ -139,10 +139,38 @@
 
           <img
             class="hero-girl-img"
-            srcset="/img/hero/girl.jpg 335w, /img/hero/girl@2x.jpg 670w"
-            sizes="(max-width: 767px) 335px"
-            src="/img/hero/girl.jpg"
+            srcset="
+              /img/hero/girl-mobile.jpg     335w,
+              /img/hero/girl-mobile@2x.jpg  670w,
+              /img/hero/girl-tablet.jpg     413w,
+              /img/hero/girl-tablet@2x.jpg  826w,
+              /img/hero/girl-desktop.jpg    392w,
+              /img/hero/girl-desktop@2x.jpg 784w
+            "
+            sizes="(max-width: 767px) 335px, (min-width: 768px) 413px, (min-width: 1280px) 392px"
+            src="/img/hero/girl-mobile.jpg"
             alt="girl in vyshyvanka"
+          />
+
+          <div class="hero-description">
+            <svg
+              class="star-icon"
+              width="52"
+              height="51"
+              aria-label="star icon"
+            >
+              <use href="/img/icons.svg#icon-star"></use>
+            </svg>
+            <p class="hero-text-description">all embroidery is made by hand</p>
+          </div>
+
+          <img
+            class="ukrainian-map-img"
+            srcset="/img/hero/map.png 139w, /img/hero/map@2x.png 278w"
+            sizes="(min-width: 768px) 139px"
+            src="/img/hero/map.png"
+            width="139"
+            alt="ukrainian map"
           />
         </div>
       </section>

@@ -7,7 +7,8 @@
 }
 
 .page-header {
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-container {
@@ -229,6 +230,13 @@
     font-size: 14px;
     line-height: 1.29;
     text-transform: uppercase;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: var(--accent-text-color);
   }
 
   .address-container {
@@ -246,6 +254,13 @@
     border-radius: 15px;
     border: 1px solid rgba(252, 249, 249, 0.1);
     padding: 14px 28px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .phone-number-link:hover,
+  .phone-number-link:focus {
+    border: 1px solid var(--accent-text-color);
   }
 
   .social-media-list {
@@ -254,5 +269,11 @@
 
   .open-menu-button {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .page-header {
+    padding-top: 22px;
   }
 }

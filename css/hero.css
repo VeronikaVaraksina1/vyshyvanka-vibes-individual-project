@@ -4,6 +4,7 @@
 
 .hero-title {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .hero-title,
@@ -15,36 +16,170 @@
 }
 
 .hero-title-span {
-    color: var(--accent-text-color);
+  color: var(--accent-text-color);
 }
 
 .hero-order-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 
-    font-size: 14px;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.04em;
-    text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
 
-    width: 155px;
-    height: 49px;
-    padding: 14px 36px;
-    border-radius: 15px;
-    border: 1px solid rgba(252, 249, 249, 0.10);
-    margin-left: auto;
-    margin-right: auto;
+  width: 155px;
+  height: 49px;
+  padding: 14px 36px;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-order-link:hover,
+.hero-order-link:focus {
+  border: 1px solid var(--accent-text-color);
 }
 
 .hero-order-icon {
-    fill: var(--accent-text-color);
+  fill: var(--accent-text-color);
+}
+
+.hero-girl-img {
+  border-radius: 4px;
+}
+
+.hero-description {
+  display: none;
+}
+
+.ukrainian-map-img {
+  display: none;
 }
 
 @media screen and (min-width: 375px) {
-    .hero-order-link {
-        margin-left: 70px;
-    }
+  .hero-title {
+    text-align: left;
+  }
+
+  .hero-order-link {
+    margin-left: 70px;
+  }
+
+  .hero-girl-img {
+    max-width: 335px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding-top: 86px;
+  }
+
+  .hero-container {
+    position: relative;
+  }
+
+  .hero-title {
+    max-width: 549px;
+    margin-bottom: 40px;
+  }
+
+  .hero-title,
+  .hero-title-span {
+    font-size: 54px;
+    line-height: 1.19;
+  }
+
+  .hero-order-link {
+    font-size: 16px;
+    width: 168px;
+    height: 50px;
+    padding: 14px 39px;
+    margin-left: 141px;
+  }
+
+  .hero-girl-img {
+    max-width: 413px;
+  }
+
+  .hero-description {
+    display: block;
+    position: absolute;
+    top: -26px;
+    right: 0;
+    width: 115px;
+    text-align: center;
+  }
+
+  .star-icon {
+    margin-bottom: 16px;
+  }
+
+  .hero-text-description {
+    color: rgba(252, 249, 249, 0.4);
+    line-height: normal;
+    letter-spacing: -0.04em;
+  }
+
+  .ukrainian-map-img {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -99px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-section {
+    padding-top: 80px;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 40px;
+  }
+
+  .hero-title-and-order-button-wrapper {
+    margin-top: 94px;
+    margin-bottom: 0;
+  }
+
+  .hero-title,
+  .hero-title-span {
+    max-width: 532px;
+  }
+
+  .hero-girl-img {
+    max-width: 392px;
+  }
+
+  .hero-description {
+    top: -14px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-title-and-order-button-wrapper {
+    margin-top: 66px;
+  }
+
+  .hero-title,
+  .hero-title-span {
+    font-size: 64px;
+    line-height: 1.16;
+    max-width: 630px;
+  }
+
+  .hero-description {
+    top: 66px;
+  }
 }
